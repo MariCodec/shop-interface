@@ -1,0 +1,130 @@
+.navbar {
+  background-color: #1e1e2f;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.menu > li {
+  position: relative;
+  border-bottom: 1px solid #33334d;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #33334d;
+}
+
+.has-submenu input {
+  display: none;
+}
+
+.has-submenu label {
+  display: block;
+  padding: 12px 16px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.has-submenu label:hover {
+  background-color: #33334d;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 0;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #2a2a45;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+  color: #ddd;
+}
+
+.submenu li a:hover {
+  background-color: #3a3a60;
+}
+
+.has-submenu input:checked + label + .submenu {
+  max-height: 500px;
+}
+
+.burger {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle:checked + .burger + .menu {
+  max-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-height: none;
+    overflow: visible;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    min-width: 180px;
+    background-color: #2a2a45;
+    z-index: 10;
+  }
+
+  .has-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .submenu li a {
+    padding: 10px 15px;
+  }
+}

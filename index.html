@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Картка товару</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/card.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="Головне меню">
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Відкрити/закрити меню"
+      />
+      <label for="menu-toggle" class="burger" aria-hidden="true"> ☰ </label>
+
+      <ul class="menu">
+        <li><a href="#">Головна</a></li>
+
+        <li class="has-submenu" aria-haspopup="true">
+          <input
+            type="checkbox"
+            id="products-toggle"
+            aria-label="Відкрити/закрити підменю Продукти"
+          />
+          <label for="products-toggle" role="button">Продукти ▾</label>
+          <ul class="submenu">
+            <li><a href="#">Ноутбуки</a></li>
+            <li><a href="#">Телефони</a></li>
+            <li><a href="#">Планшети</a></li>
+            <li><a href="#">Аксесуари</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu" aria-haspopup="true">
+          <input
+            type="checkbox"
+            id="services-toggle"
+            aria-label="Відкрити/закрити підменю Послуги"
+          />
+          <label for="services-toggle" role="button">Послуги ▾</label>
+          <ul class="submenu">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантія</a></li>
+            <li><a href="#">Технічна підтримка</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Про нас</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <div class="products-wrapper">
+        <article
+          class="product-card"
+          itemscope
+          itemtype="https://schema.org/Product"
+        >
+          <a
+            href="#"
+            class="card-link"
+            aria-label="Перейти на сторінку Apple iPhone 14 Pro"
+            itemprop="url"
+          >
+            <span class="more-info" aria-hidden="true">More info</span>
+            <img
+              class="product-image"
+              src="images/phone-card@1x.webp"
+              srcset="
+                images/phone-card@1x.webp 1x,
+                images/phone-card@2x.webp 2x
+              "
+              width="150"
+              height="150"
+              alt="Смартфон Apple iPhone 14 Pro глибокий фіолетовий колір"
+              itemprop="image"
+            />
+
+            <h2 class="product-title" itemprop="name">Apple iPhone 14 Pro</h2>
+            <hr class="divider" />
+
+            <p class="product-description" itemprop="description">
+              Потужний і стильний смартфон з дисплеєм Super Retina XDR, швидким
+              процесором і високоякісною камерою.
+            </p>
+
+            <div
+              class="price"
+              itemprop="offers"
+              itemscope
+              itemtype="https://schema.org/Offer"
+            >
+              <del
+                class="old-price"
+                aria-label="Стара ціна"
+                itemprop="price"
+                content="39000"
+                >₴39000</del
+              >
+              <ins class="new-price" aria-label="Нова ціна" content="29999"
+                >₴29999</ins
+              >
+              <meta itemprop="priceCurrency" content="UAH" />
+              <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+          </a>
+
+          <div class="product-actions">
+            <button class="add-to-cart">Додати в кошик</button>
+            <button class="favorite" aria-label="Додати в улюблені">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="heart-path"
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+            2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09 
+            C13.09 3.81 14.76 3 16.5 3 
+            19.58 3 22 5.42 22 8.5 
+            c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  stroke="#e5e5be"
+                  stroke-width="2"
+                  role="img"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article
+          class="product-card"
+          itemscope
+          itemtype="https://schema.org/Product"
+        >
+          <a
+            href="#"
+            class="card-link"
+            aria-label="Перейти на сторінку Apple iPhone 14 Pro"
+            itemprop="url"
+          >
+            <span class="more-info" aria-hidden="true">More info</span>
+            <img
+              class="product-image"
+              src="images/phone-card@1x.webp"
+              srcset="
+                images/phone-card@1x.webp 1x,
+                images/phone-card@2x.webp 2x
+              "
+              width="150"
+              height="150"
+              alt="Смартфон Apple iPhone 14 Pro глибокий фіолетовий колір"
+              itemprop="image"
+            />
+
+            <h2 class="product-title" itemprop="name">Apple iPhone 14 Pro</h2>
+            <hr class="divider" />
+
+            <p class="product-description" itemprop="description">
+              Потужний і стильний смартфон з дисплеєм Super Retina XDR, швидким
+              процесором і високоякісною камерою.
+            </p>
+
+            <div
+              class="price"
+              itemprop="offers"
+              itemscope
+              itemtype="https://schema.org/Offer"
+            >
+              <del
+                class="old-price"
+                aria-label="Стара ціна"
+                itemprop="price"
+                content="39000"
+                >₴39000</del
+              >
+              <ins class="new-price" aria-label="Нова ціна" content="29999"
+                >₴29999</ins
+              >
+              <meta itemprop="priceCurrency" content="UAH" />
+              <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+          </a>
+
+          <div class="product-actions">
+            <button class="add-to-cart">Додати в кошик</button>
+            <button class="favorite" aria-label="Додати в улюблені">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="heart-path"
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+            2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09 
+            C13.09 3.81 14.76 3 16.5 3 
+            19.58 3 22 5.42 22 8.5 
+            c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  stroke="#e5e5be"
+                  stroke-width="2"
+                  role="img"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article
+          class="product-card"
+          itemscope
+          itemtype="https://schema.org/Product"
+        >
+          <a
+            href="#"
+            class="card-link"
+            aria-label="Перейти на сторінку Apple iPhone 14 Pro"
+            itemprop="url"
+          >
+            <span class="more-info" aria-hidden="true">More info</span>
+            <img
+              class="product-image"
+              src="images/phone-card@1x.webp"
+              srcset="
+                images/phone-card@1x.webp 1x,
+                images/phone-card@2x.webp 2x
+              "
+              width="150"
+              height="150"
+              alt="Смартфон Apple iPhone 14 Pro глибокий фіолетовий колір"
+              itemprop="image"
+            />
+
+            <h2 class="product-title" itemprop="name">Apple iPhone 14 Pro</h2>
+            <hr class="divider" />
+
+            <p class="product-description" itemprop="description">
+              Потужний і стильний смартфон з дисплеєм Super Retina XDR, швидким
+              процесором і високоякісною камерою.
+            </p>
+
+            <div
+              class="price"
+              itemprop="offers"
+              itemscope
+              itemtype="https://schema.org/Offer"
+            >
+              <del
+                class="old-price"
+                aria-label="Стара ціна"
+                itemprop="price"
+                content="39000"
+                >₴39000</del
+              >
+              <ins class="new-price" aria-label="Нова ціна" content="29999"
+                >₴29999</ins
+              >
+              <meta itemprop="priceCurrency" content="UAH" />
+              <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+          </a>
+
+          <div class="product-actions">
+            <button class="add-to-cart">Додати в кошик</button>
+            <button class="favorite" aria-label="Додати в улюблені">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="heart-path"
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+            2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09 
+            C13.09 3.81 14.76 3 16.5 3 
+            19.58 3 22 5.42 22 8.5 
+            c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  stroke="#e5e5be"
+                  stroke-width="2"
+                  role="img"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article
+          class="product-card"
+          itemscope
+          itemtype="https://schema.org/Product"
+        >
+          <a
+            href="#"
+            class="card-link"
+            aria-label="Перейти на сторінку Apple iPhone 14 Pro"
+            itemprop="url"
+          >
+            <span class="more-info" aria-hidden="true">More info</span>
+            <img
+              class="product-image"
+              src="images/phone-card@1x.webp"
+              srcset="
+                images/phone-card@1x.webp 1x,
+                images/phone-card@2x.webp 2x
+              "
+              width="150"
+              height="150"
+              alt="Смартфон Apple iPhone 14 Pro глибокий фіолетовий колір"
+              itemprop="image"
+            />
+
+            <h2 class="product-title" itemprop="name">Apple iPhone 14 Pro</h2>
+            <hr class="divider" />
+
+            <p class="product-description" itemprop="description">
+              Потужний і стильний смартфон з дисплеєм Super Retina XDR, швидким
+              процесором і високоякісною камерою.
+            </p>
+
+            <div
+              class="price"
+              itemprop="offers"
+              itemscope
+              itemtype="https://schema.org/Offer"
+            >
+              <del
+                class="old-price"
+                aria-label="Стара ціна"
+                itemprop="price"
+                content="39000"
+                >₴39000</del
+              >
+              <ins class="new-price" aria-label="Нова ціна" content="29999"
+                >₴29999</ins
+              >
+              <meta itemprop="priceCurrency" content="UAH" />
+              <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+          </a>
+
+          <div class="product-actions">
+            <button class="add-to-cart">Додати в кошик</button>
+            <button class="favorite" aria-label="Додати в улюблені">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="heart-path"
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+            2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09 
+            C13.09 3.81 14.76 3 16.5 3 
+            19.58 3 22 5.42 22 8.5 
+            c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  stroke="#e5e5be"
+                  stroke-width="2"
+                  role="img"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+        <article
+          class="product-card"
+          itemscope
+          itemtype="https://schema.org/Product"
+        >
+          <a
+            href="#"
+            class="card-link"
+            aria-label="Перейти на сторінку Apple iPhone 14 Pro"
+            itemprop="url"
+          >
+            <span class="more-info" aria-hidden="true">More info</span>
+            <img
+              class="product-image"
+              src="images/phone-card@1x.webp"
+              srcset="
+                images/phone-card@1x.webp 1x,
+                images/phone-card@2x.webp 2x
+              "
+              width="150"
+              height="150"
+              alt="Смартфон Apple iPhone 14 Pro глибокий фіолетовий колір"
+              itemprop="image"
+            />
+
+            <h2 class="product-title" itemprop="name">Apple iPhone 14 Pro</h2>
+            <hr class="divider" />
+
+            <p class="product-description" itemprop="description">
+              Потужний і стильний смартфон з дисплеєм Super Retina XDR, швидким
+              процесором і високоякісною камерою.
+            </p>
+
+            <div
+              class="price"
+              itemprop="offers"
+              itemscope
+              itemtype="https://schema.org/Offer"
+            >
+              <del
+                class="old-price"
+                aria-label="Стара ціна"
+                itemprop="price"
+                content="39000"
+                >₴39000</del
+              >
+              <ins class="new-price" aria-label="Нова ціна" content="29999"
+                >₴29999</ins
+              >
+              <meta itemprop="priceCurrency" content="UAH" />
+              <link itemprop="availability" href="https://schema.org/InStock" />
+            </div>
+          </a>
+
+          <div class="product-actions">
+            <button class="add-to-cart">Додати в кошик</button>
+            <button class="favorite" aria-label="Додати в улюблені">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="heart-path"
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+            2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09 
+            C13.09 3.81 14.76 3 16.5 3 
+            19.58 3 22 5.42 22 8.5 
+            c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  stroke="#e5e5be"
+                  stroke-width="2"
+                  role="img"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
